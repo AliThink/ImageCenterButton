@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "AliThink" => "cloudsthinker@126.com" }
   s.source       = { :git => "https://github.com/AliThink/ImageCenterButton.git", :tag => "v0.1.0" }
-  s.source_files  = "WechatShortVideo/**/*.{h,m}"
+  s.source_files  = "ImageCenterButton/**/*.{h,m}"
   s.platform      = :ios, '7.0'
   s.requires_arc  = true
 end
