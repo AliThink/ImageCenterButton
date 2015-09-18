@@ -57,6 +57,7 @@
     [self addTarget:self action:@selector(pressed:) forControlEvents:UIControlEventTouchDown];
     [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchUpInside];
     [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchUpOutside];
+    [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchCancel];
 }
 
 - (void)layoutSubviews {
