@@ -1,5 +1,4 @@
 # ImageCenterButton
-===============
 
 <img src="ImageCenterButton-demo.gif" width="230" height="408" />
 
