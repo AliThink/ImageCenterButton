@@ -22,7 +22,10 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self configView];
+    [super viewDidAppear:animated];
+    
+    // Manual setup
+    //[self configView];
 }
 
 - (void)didReceiveMemoryWarning {
