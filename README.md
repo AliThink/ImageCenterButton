@@ -14,6 +14,7 @@ ImageCenterButton is a subclass of UIButton. Use it you can make a button with i
 * Image padding customization
 * Round image support
 * Dynamic button backgroundColor customization
+* IB_DESIGNABLE and IBInspectable added(Andrey Yastrebov ^_^)
 
 ## CocoaPods
 To use ImageCenterButton add the following to your Podfile
@@ -23,17 +24,21 @@ To use ImageCenterButton add the following to your Podfile
 ## Usage
 ```objective-c
 // Round Image
-@property BOOL imageIsRound;
+@property(nonatomic) IBInspectable BOOL imageIsRound;
 // Image Padding
-@property CGFloat padding;
+@property(nonatomic) IBInspectable CGFloat padding;
 // Spacing between imageview and textlabel
-@property CGFloat imageTextSpace;
+@property(nonatomic) IBInspectable CGFloat imageTextSpace;
 // Maximum imageview size
-@property CGSize imageViewMaxSize;
+@property(nonatomic) IBInspectable CGSize imageViewMaxSize;
 // Button backgroundHighlighted
-@property(nonatomic, strong) UIColor *backgroundHighlightedColor;
+@property(nonatomic, strong) IBInspectable UIColor *backgroundHighlightedColor;
 // Button backgroundNormal
-@property(nonatomic, strong) UIColor *backgroundNormalColor;
+@property(nonatomic, strong) IBInspectable UIColor *backgroundNormalColor;
+// Border width
+@property(nonatomic) IBInspectable CGFloat borderWidth;
+// Border Color
+@property(nonatomic, strong) IBInspectable UIColor *borderColor;
 ```
  
 ## License
@@ -55,21 +60,26 @@ ImageCenterButton 是UIButton的子类。可以用它很方便的生成图像在
  * 图像padding可定制
  * 支持生成圆形图像
  * 按钮不同状态背景色可定制
+ * 添加IB_DESIGNABLE IBInspectable 支持(感谢Andrey Yastrebov的支持)
 
 ## ImageCenterButton 使用配置
 ```objective-c
 // 是否将图像设置成圆形
-@property BOOL imageIsRound;
+@property(nonatomic) IBInspectable BOOL imageIsRound;
 // 图像padding设置
-@property CGFloat padding;
+@property(nonatomic) IBInspectable CGFloat padding;
 // imageview和textlabel间距设置
-@property CGFloat imageTextSpace;
+@property(nonatomic) IBInspectable CGFloat imageTextSpace;
 // imageview最大尺寸设置
-@property CGSize imageViewMaxSize;
+@property(nonatomic) IBInspectable CGSize imageViewMaxSize;
 // Button高亮状态背景色设置
-@property(nonatomic, strong) UIColor *backgroundHighlightedColor;
+@property(nonatomic, strong) IBInspectable UIColor *backgroundHighlightedColor;
 // Button普通状态背景色设置
-@property(nonatomic, strong) UIColor *backgroundNormalColor;
+@property(nonatomic, strong) IBInspectable UIColor *backgroundNormalColor;
+// 边框宽度设置
+@property(nonatomic) IBInspectable CGFloat borderWidth;
+// 边框颜色设置
+@property(nonatomic, strong) IBInspectable UIColor *borderColor;
 ```
 
 ## CocoaPods 支持
