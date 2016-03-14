@@ -53,6 +53,14 @@
     return self;
 }
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self addAction];
+    }
+    return self;
+}
+
 - (void)addAction {
     [self addTarget:self action:@selector(pressed:) forControlEvents:UIControlEventTouchDown];
     [self addTarget:self action:@selector(touchUp:) forControlEvents:UIControlEventTouchUpInside];
@@ -124,6 +132,14 @@
     self.titleLabel.center = titleCenter;
     
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    
+    if (self.borderWidth) {
+        self.layer.borderWidth = self.borderWidth;
+    }
+    
+    if (self.borderColor) {
+        self.layer.borderColor = self.borderColor.CGColor;
+    }
 }
 
 - (void)pressed:(UIButton *)btn {

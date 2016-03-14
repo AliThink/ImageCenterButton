@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -20,10 +21,231 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gyr-C1-6sI">
                                 <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBE-4D-RPh" customClass="ImageCenterButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="107"/>
+                                        <state key="normal" title="AliThink" image="avatar">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="imageIsRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fre-DR-dKs" customClass="ImageCenterButton">
+                                        <rect key="frame" x="107" y="0.0" width="106" height="107"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fre-DR-dKs" secondAttribute="height" multiplier="1:1" id="irn-CQ-St5"/>
+                                        </constraints>
+                                        <state key="normal" title="AliThink" image="avatar">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="imageIsRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvY-A2-KAD" customClass="ImageCenterButton">
+                                        <rect key="frame" x="213" y="0.0" width="107" height="107"/>
+                                        <state key="normal" title="AliThink" image="avatar">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="imageIsRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXU-hO-Vrh" customClass="ImageCenterButton">
+                                        <rect key="frame" x="0.0" y="107" width="107" height="106"/>
+                                        <state key="normal" title="AliThink" image="avatar">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="imageIsRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uz3-HD-o9C" customClass="ImageCenterButton">
+                                        <rect key="frame" x="107" y="107" width="106" height="106"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Uz3-HD-o9C" secondAttribute="height" multiplier="1:1" id="qdA-EB-sY2"/>
+                                        </constraints>
+                                        <state key="normal" title="AliThink" image="avatar">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="imageIsRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sid-Xc-9hP" customClass="ImageCenterButton">
+                                        <rect key="frame" x="213" y="107" width="107" height="106"/>
+                                        <state key="normal" title="AliThink" image="avatar">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="imageIsRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bf-oV-0x8" customClass="ImageCenterButton">
+                                        <rect key="frame" x="0.0" y="213" width="107" height="107"/>
+                                        <state key="normal" title="AliThink" image="avatar">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="imageIsRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMP-L2-Zqm" customClass="ImageCenterButton">
+                                        <rect key="frame" x="107" y="213" width="106" height="107"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uMP-L2-Zqm" secondAttribute="height" multiplier="1:1" id="tgK-ID-Iy8"/>
+                                        </constraints>
+                                        <state key="normal" title="AliThink" image="avatar">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="imageIsRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZL-qv-LLn" customClass="ImageCenterButton">
+                                        <rect key="frame" x="213" y="213" width="107" height="107"/>
+                                        <state key="normal" title="AliThink" image="avatar">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="imageIsRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Sid-Xc-9hP" firstAttribute="top" secondItem="LXU-hO-Vrh" secondAttribute="top" id="0kF-up-s4c"/>
+                                    <constraint firstItem="jvY-A2-KAD" firstAttribute="top" secondItem="Gyr-C1-6sI" secondAttribute="top" id="1cP-IL-kVZ"/>
+                                    <constraint firstItem="fre-DR-dKs" firstAttribute="height" secondItem="NBE-4D-RPh" secondAttribute="height" id="1iQ-qC-U3J"/>
+                                    <constraint firstItem="Uz3-HD-o9C" firstAttribute="width" secondItem="LXU-hO-Vrh" secondAttribute="width" id="62q-9E-6Ml"/>
+                                    <constraint firstItem="NBE-4D-RPh" firstAttribute="top" secondItem="Gyr-C1-6sI" secondAttribute="top" id="6RR-Xa-pqR"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZZL-qv-LLn" secondAttribute="trailing" id="6Sz-3Y-oUb"/>
+                                    <constraint firstItem="NBE-4D-RPh" firstAttribute="leading" secondItem="Gyr-C1-6sI" secondAttribute="leading" id="7Yg-Rw-SaL"/>
+                                    <constraint firstItem="uMP-L2-Zqm" firstAttribute="width" secondItem="uMP-L2-Zqm" secondAttribute="height" multiplier="1:1" id="8Aa-XN-CTi"/>
+                                    <constraint firstItem="uMP-L2-Zqm" firstAttribute="leading" secondItem="5Bf-oV-0x8" secondAttribute="trailing" id="9Xe-2n-jcY"/>
+                                    <constraint firstItem="jvY-A2-KAD" firstAttribute="width" secondItem="NBE-4D-RPh" secondAttribute="width" id="Atb-gz-s8a"/>
+                                    <constraint firstItem="Uz3-HD-o9C" firstAttribute="height" secondItem="LXU-hO-Vrh" secondAttribute="height" id="CCO-yR-RmF"/>
+                                    <constraint firstItem="uMP-L2-Zqm" firstAttribute="height" secondItem="5Bf-oV-0x8" secondAttribute="height" id="FfQ-oo-5u3"/>
+                                    <constraint firstItem="uMP-L2-Zqm" firstAttribute="top" secondItem="5Bf-oV-0x8" secondAttribute="top" id="IV3-Kj-S6r"/>
+                                    <constraint firstItem="Uz3-HD-o9C" firstAttribute="width" secondItem="Uz3-HD-o9C" secondAttribute="height" multiplier="1:1" id="JuJ-S8-4JS"/>
+                                    <constraint firstItem="Sid-Xc-9hP" firstAttribute="leading" secondItem="Uz3-HD-o9C" secondAttribute="trailing" id="Jxk-XO-JG8"/>
+                                    <constraint firstItem="fre-DR-dKs" firstAttribute="width" secondItem="NBE-4D-RPh" secondAttribute="width" id="KjT-2V-0TV"/>
+                                    <constraint firstItem="ZZL-qv-LLn" firstAttribute="leading" secondItem="uMP-L2-Zqm" secondAttribute="trailing" id="L2q-3i-rG0"/>
+                                    <constraint firstAttribute="trailing" secondItem="jvY-A2-KAD" secondAttribute="trailing" id="MPV-Es-pR8"/>
+                                    <constraint firstItem="fre-DR-dKs" firstAttribute="centerX" secondItem="Gyr-C1-6sI" secondAttribute="centerX" id="MVx-Uh-k72"/>
+                                    <constraint firstItem="ZZL-qv-LLn" firstAttribute="bottom" secondItem="5Bf-oV-0x8" secondAttribute="bottom" id="NQF-bT-y1p"/>
+                                    <constraint firstItem="ZZL-qv-LLn" firstAttribute="height" secondItem="5Bf-oV-0x8" secondAttribute="height" id="NQf-14-NYT"/>
+                                    <constraint firstItem="Uz3-HD-o9C" firstAttribute="top" secondItem="LXU-hO-Vrh" secondAttribute="top" id="Uw8-8a-q56"/>
+                                    <constraint firstItem="Uz3-HD-o9C" firstAttribute="bottom" secondItem="LXU-hO-Vrh" secondAttribute="bottom" id="VVw-6B-3kx"/>
+                                    <constraint firstItem="Sid-Xc-9hP" firstAttribute="height" secondItem="LXU-hO-Vrh" secondAttribute="height" id="YX8-cV-Gla"/>
+                                    <constraint firstItem="ZZL-qv-LLn" firstAttribute="top" secondItem="5Bf-oV-0x8" secondAttribute="top" id="aYb-Cv-ZXE"/>
+                                    <constraint firstItem="uMP-L2-Zqm" firstAttribute="bottom" secondItem="5Bf-oV-0x8" secondAttribute="bottom" id="b87-nc-fvD"/>
+                                    <constraint firstItem="jvY-A2-KAD" firstAttribute="height" secondItem="NBE-4D-RPh" secondAttribute="height" id="bEm-Yc-Geu"/>
+                                    <constraint firstItem="Uz3-HD-o9C" firstAttribute="leading" secondItem="LXU-hO-Vrh" secondAttribute="trailing" id="bnI-QO-GcS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sid-Xc-9hP" secondAttribute="trailing" id="dzd-8Z-W1o"/>
+                                    <constraint firstAttribute="bottom" secondItem="uMP-L2-Zqm" secondAttribute="bottom" id="hpD-fq-2M9"/>
+                                    <constraint firstItem="Sid-Xc-9hP" firstAttribute="width" secondItem="LXU-hO-Vrh" secondAttribute="width" id="iIw-Va-GuH"/>
+                                    <constraint firstItem="5Bf-oV-0x8" firstAttribute="leading" secondItem="Gyr-C1-6sI" secondAttribute="leading" id="kEX-BA-4qJ"/>
+                                    <constraint firstItem="Sid-Xc-9hP" firstAttribute="bottom" secondItem="LXU-hO-Vrh" secondAttribute="bottom" id="mrI-bw-UO3"/>
+                                    <constraint firstItem="LXU-hO-Vrh" firstAttribute="leading" secondItem="Gyr-C1-6sI" secondAttribute="leading" id="neE-w2-zDt"/>
+                                    <constraint firstItem="uMP-L2-Zqm" firstAttribute="top" secondItem="Sid-Xc-9hP" secondAttribute="bottom" id="sAy-kL-gcV"/>
+                                    <constraint firstItem="uMP-L2-Zqm" firstAttribute="width" secondItem="5Bf-oV-0x8" secondAttribute="width" id="sgs-dK-rDZ"/>
+                                    <constraint firstItem="Uz3-HD-o9C" firstAttribute="centerY" secondItem="Gyr-C1-6sI" secondAttribute="centerY" id="tDC-XC-m0O"/>
+                                    <constraint firstItem="Uz3-HD-o9C" firstAttribute="centerX" secondItem="Gyr-C1-6sI" secondAttribute="centerX" id="tMl-i6-Sgk"/>
+                                    <constraint firstItem="fre-DR-dKs" firstAttribute="leading" secondItem="NBE-4D-RPh" secondAttribute="trailing" id="uKa-Od-k73"/>
                                     <constraint firstAttribute="width" secondItem="Gyr-C1-6sI" secondAttribute="height" multiplier="1:1" id="uwa-y2-5c2"/>
+                                    <constraint firstItem="ZZL-qv-LLn" firstAttribute="width" secondItem="5Bf-oV-0x8" secondAttribute="width" id="vGC-Hw-pCJ"/>
+                                    <constraint firstItem="Uz3-HD-o9C" firstAttribute="top" secondItem="fre-DR-dKs" secondAttribute="bottom" id="vyh-eQ-MRb"/>
+                                    <constraint firstItem="fre-DR-dKs" firstAttribute="top" secondItem="Gyr-C1-6sI" secondAttribute="top" id="xIM-8e-5QL"/>
+                                    <constraint firstItem="jvY-A2-KAD" firstAttribute="leading" secondItem="fre-DR-dKs" secondAttribute="trailing" id="xLp-5u-j8p"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MVx-Uh-k72"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,4 +266,7 @@
             <point key="canvasLocation" x="234" y="341"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avatar" width="400" height="400"/>
+    </resources>
 </document>

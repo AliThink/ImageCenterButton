@@ -31,19 +31,25 @@
 
 #import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
+
 @interface ImageCenterButton : UIButton
 
 // Round Image
-@property BOOL imageIsRound;
+@property(nonatomic) IBInspectable BOOL imageIsRound;
 // Image Padding
-@property CGFloat padding;
+@property(nonatomic) IBInspectable CGFloat padding;
+// Border width
+@property(nonatomic) IBInspectable CGFloat borderWidth;
 // Spacing between imageview and textlabel
-@property CGFloat imageTextSpace;
+@property(nonatomic) IBInspectable CGFloat imageTextSpace;
 // Maximum imageview size
-@property CGSize imageViewMaxSize;
+@property(nonatomic) IBInspectable CGSize imageViewMaxSize;
 // Button backgroundHighlighted
-@property(nonatomic, strong) UIColor *backgroundHighlightedColor;
+@property(nonatomic, strong) IBInspectable UIColor *backgroundHighlightedColor;
 // Button backgroundNormal
-@property(nonatomic, strong) UIColor *backgroundNormalColor;
+@property(nonatomic, strong) IBInspectable UIColor *backgroundNormalColor;
+// Border Color
+@property(nonatomic, strong) IBInspectable UIColor *borderColor;
 
 @end
