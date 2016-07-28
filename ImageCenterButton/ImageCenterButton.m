@@ -144,6 +144,10 @@
 }
 
 - (void)pressed:(UIButton *)btn {
+    if (self.highlightedImageAlpha) {
+      [self.imageView setAlpha:self.highlightedImageAlpha];
+    }
+  
     if (self.backgroundHighlightedColor) {
         [btn setBackgroundColor:self.backgroundHighlightedColor];
     } else {
@@ -152,6 +156,8 @@
 }
 
 - (void)touchUp:(UIButton *)btn {
+    [self.imageView setAlpha:1.0];
+
     if (self.backgroundNormalColor) {
         [btn setBackgroundColor:self.backgroundNormalColor];
     } else {
