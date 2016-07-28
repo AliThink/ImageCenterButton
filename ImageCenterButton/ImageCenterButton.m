@@ -80,7 +80,8 @@
     if (!self.imageTextSpace) {
         self.imageTextSpace = IMAGECENTERBUTTON_IMAGE_TEXT_SPACING;
     }
-    
+  
+    [self.titleLabel sizeToFit];
     CGFloat titleLabelHeight = self.titleLabel.frame.size.height;
     if (titleLabelHeight == 0) {
         titleLabelHeight = IMAGECENTERBUTTON_TITLE_MIN_HEIGHT;
