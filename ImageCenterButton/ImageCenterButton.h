@@ -37,6 +37,8 @@ IB_DESIGNABLE
 
 // Round Image
 @property(nonatomic) IBInspectable BOOL imageIsRound;
+// Highlighted Image Alpha
+@property(nonatomic) IBInspectable CGFloat highlightedImageAlpha;
 // Image Padding
 @property(nonatomic) IBInspectable CGFloat padding;
 // Border width

@@ -80,7 +80,8 @@
     if (!self.imageTextSpace) {
         self.imageTextSpace = IMAGECENTERBUTTON_IMAGE_TEXT_SPACING;
     }
-    
+  
+    [self.titleLabel sizeToFit];
     CGFloat titleLabelHeight = self.titleLabel.frame.size.height;
     if (titleLabelHeight == 0) {
         titleLabelHeight = IMAGECENTERBUTTON_TITLE_MIN_HEIGHT;
@@ -143,6 +144,10 @@
 }
 
 - (void)pressed:(UIButton *)btn {
+    if (self.highlightedImageAlpha) {
+      [self.imageView setAlpha:self.highlightedImageAlpha];
+    }
+  
     if (self.backgroundHighlightedColor) {
         [btn setBackgroundColor:self.backgroundHighlightedColor];
     } else {
@@ -151,6 +156,8 @@
 }
 
 - (void)touchUp:(UIButton *)btn {
+    [self.imageView setAlpha:1.0];
+
     if (self.backgroundNormalColor) {
         [btn setBackgroundColor:self.backgroundNormalColor];
     } else {
