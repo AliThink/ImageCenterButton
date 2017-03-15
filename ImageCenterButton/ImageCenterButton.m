@@ -122,6 +122,8 @@
         self.imageView.layer.cornerRadius = self.imageView.frame.size.width / 2.0;
     }
     
+    self.imageView.frame = CGRectIntegral(self.imageView.frame);
+    
     CGRect titleLabelFrame = self.titleLabel.frame;
     titleLabelFrame.size = CGSizeMake(self.frame.size.width, titleLabelHeight);
     self.titleLabel.frame = titleLabelFrame;
